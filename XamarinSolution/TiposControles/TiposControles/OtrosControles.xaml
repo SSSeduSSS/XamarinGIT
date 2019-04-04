@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TiposControles.OtrosControles">
+    <ContentPage.Content>
+        <!--El margin es para que en IOS no empiece desde arriba-->
+        <StackLayout Margin="0,40,0,0">
+            <Label Text="Otros Controles"
+                   FontSize="30"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <ProgressBar Progress="0"
+                         x:Name="progreso"
+                         HorizontalOptions="FillAndExpand"/>
+            <Slider x:Name="slider1" Minimum="0"
+                    Maximum="100" Value="15" 
+                    HorizontalOptions="FillAndExpand"/>
+            <Label x:Name="lblSlider" FontSize="20"
+                   TextColor="BlueViolet"/>
+            <BoxView WidthRequest="200" 
+                     HeightRequest="5"
+                     BackgroundColor="Ivory" />
+            <Label  Text="Stepper" FontSize="Medium"/>
+            <Stepper Increment="1" Minimum="0" Maximum="30"
+                     HorizontalOptions="Center" x:Name="stepper1"/>
+            <Label  x:Name="lblStepper" FontSize="Medium"
+                    
+                    TextColor="Moccasin"/>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

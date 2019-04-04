@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TiposControles.WebViewPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <!--Permite navegar dentro de mi APP por webs-->
+            <WebView Source="https://www.linkedin.com/"
+                     VerticalOptions="FillAndExpand"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

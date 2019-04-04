@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TiposControles.EditorView">
+    <ContentPage.Content>
+        <StackLayout Margin="0,40,0,0">
+            <Label Text="EditorView!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Entry  HorizontalOptions="FillAndExpand"/>
+            <Label HorizontalOptions="Start"
+                   Text="CajaEditor:"/>
+            <Editor VerticalOptions="FillAndExpand"
+                    TextColor="Brown"/>
+            <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Bruce_Willis_by_Gage_Skidmore_3.jpg/800px-Bruce_Willis_by_Gage_Skidmore_3.jpg"
+                   WidthRequest="100"
+                   HeightRequest="100"/>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
