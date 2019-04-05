@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TypesLayout.XamlViews.FrameView">
+    <ContentPage.Content>
+        <StackLayout Margin="0,40,0,0">
+            <Label Text="Frame"
+                HorizontalOptions="CenterAndExpand" 
+                FontSize="20" />
+        
+            
+        <Frame OutlineColor="Red"
+               HasShadow="True"
+               VerticalOptions="StartAndExpand">
+
+            <Label Text="Hdasd asdsadsa dgasfgsa dasdasdas f343 "
+                HorizontalOptions="CenterAndExpand" 
+                FontSize="20" />
+            
+        </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

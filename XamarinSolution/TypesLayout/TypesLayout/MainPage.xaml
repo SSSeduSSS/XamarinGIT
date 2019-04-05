@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TypesLayout"
+             x:Class="TypesLayout.MainPage">
+    <ContentPage.Content>
+
+        <StackLayout Margin="0,40,0,0">
+
+            <BoxView HeightRequest="5"                     
+                     WidthRequest="100"                     
+                     BackgroundColor="Red"/>
+
+            <Button Text="StackLayout"
+                    x:Name="botonstack"/>
+
+            <BoxView HeightRequest="5"                     
+                     WidthRequest="100"                     
+                     BackgroundColor="Red"/>
+
+            <Button Text="Frame"
+                    x:Name="botonframe"/>
+
+            <BoxView HeightRequest="5"                     
+                     WidthRequest="100"                     
+                     BackgroundColor="Red"/>
+
+            <Button Text="FlexLayout"    
+                    x:Name="botonflexLayout"/>
+
+            <BoxView HeightRequest="5"                     
+                     WidthRequest="100"                     
+                     BackgroundColor="Red"/>
+
+
+            <Button Text="AbsoluteLayout"
+                    x:Name="botonabsoluteayout"/>
+
+            <BoxView HeightRequest="5"                     
+                     WidthRequest="100"                     
+                     BackgroundColor="Red"/>
+
+            <Button Text="ScrollView"
+                    x:Name="botonscrollView"/>
+
+
+            <BoxView HeightRequest="5"                     
+                     WidthRequest="100"                     
+                     BackgroundColor="Red"/>
+        </StackLayout>
+
+    </ContentPage.Content>
+
+
+</ContentPage>
