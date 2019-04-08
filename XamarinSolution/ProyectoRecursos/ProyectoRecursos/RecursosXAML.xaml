@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoRecursos.RecursosXAML">
+
+    <!--Esta clase solo llevará los recursos-->
+    <!--Para que funcione tiene que registrarse en APP:XAML-->
+    <Style x:Key="botonverde" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="AntiqueWhite"/>
+        <Setter Property="RotationX" Value="25"/>
+        <Setter Property="FontSize" Value="40"/>
+    </Style>
+</ResourceDictionary>

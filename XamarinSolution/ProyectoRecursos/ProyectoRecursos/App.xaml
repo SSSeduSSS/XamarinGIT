@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoRecursos.App"
+             xmlns:externo ="clr-namespace:RecursosCore;assembly=RecursosCore"  
+             xmlns:recursos="clr-namespace:ProyectoRecursos">
+    
+    
+    <Application.Resources>
+        <!--El nombre de mi página de recursos-->
+        <ResourceDictionary MergedWith="recursos:RecursosXAML"/>   <!--Este recurso está en una page del mismo proyecto-->     
+
+        <ResourceDictionary MergedWith="externo:EstilosExternos"/>     <!--Este recurso está en una page del mismo proyecto-->
+        
+    </Application.Resources>
+</Application>

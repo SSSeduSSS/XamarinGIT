@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ProyectoRecursos"
+             x:Class="ProyectoRecursos.MainPage">
+
+    <!--Esto sirve para crear recursos para reutilizarlos en otras clases-->
+    <ContentPage.Resources >
+        
+        <Color x:Key="colorletra" >Fuchsia</Color>
+        <Color x:Key="colorfondo" >Yellow</Color>
+
+        <Style x:Key="botonrojo" TargetType="Button"> 
+            <Setter Property="FontSize" Value="50"/>
+            <Setter Property="BorderColor" Value="Blue"/>
+            <Setter Property="BorderWidth" Value="3"/>
+            <Setter Property="BackgroundColor" Value="Green"/>
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+        </Style>
+        
+        
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+
+        <StackLayout>
+            <!-- Place new controls here -->
+            <Label Text="Label con estilos" 
+                   BackgroundColor="{StaticResource colorfondo}"
+                   TextColor="{StaticResource colorletra}"
+                   HorizontalOptions="Center"
+                   FontSize="35"
+                   VerticalOptions="CenterAndExpand" />
+
+            <Button Text="Boton custom"
+                    Style="{StaticResource botonrojo}"/>
+
+            <!--Este StaticResource está en RecursosXAML.xaml-->
+            <Button Text="Recurso en app.xaml"
+                    Style="{StaticResource botonverde}"/>
+
+            <Button Text="Recurso en app.xaml"
+                    Style="{StaticResource botonazul}"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
