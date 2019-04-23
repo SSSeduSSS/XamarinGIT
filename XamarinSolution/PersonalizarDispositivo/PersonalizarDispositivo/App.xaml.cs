@@ -11,7 +11,7 @@ namespace PersonalizarDispositivo
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new PaginaCSS();
         }
 
         protected override void OnStart()

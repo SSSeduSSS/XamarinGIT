@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PaginasBindings.BindingObjetos">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label BindingContext="{x:Reference Name=texto}"
+               Text="{Binding Path=Text}"
+               FontSize="Large"
+               TextColor="Fuchsia"/>
+            <Entry x:Name="texto"
+               BackgroundColor="Beige"
+               Placeholder="Introduzca un número"
+               VerticalOptions="CenterAndExpand"
+               Text="Soy un texto"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

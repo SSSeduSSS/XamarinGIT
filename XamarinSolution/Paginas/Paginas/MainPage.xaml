@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Paginas"
+             x:Class="Paginas.MainPage">
+
+    <ContentPage.Content>
+        <Grid Margin="0,30,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <!--La PRIMERA fila coge 40-->
+                <RowDefinition Height="*"/>
+                <!--La SEGUNDA fila coge todo el resto de la fila-->
+            </Grid.RowDefinitions>
+            <Label Text="TITULO" FontSize="35" 
+                   TextColor="DimGray" HorizontalOptions="CenterAndExpand"
+                   Grid.Row="0"/>
+            <!--Con esto le digo que en la FILA 0 quiero meter este label-->
+
+            <Grid Grid.Row="1" BackgroundColor="Cyan">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Text="0,0" Grid.Row="0" Grid.Column="0"/>
+                <Button Text="0,1" Grid.Row="0" Grid.Column="1"/>
+                <ActivityIndicator IsRunning="True"
+                                   BackgroundColor="Yellow"
+                                   Grid.Row="1" Grid.Column="0"/>
+                <ActivityIndicator IsRunning="True"
+                                   BackgroundColor="Firebrick"
+                                   Grid.Row="1" Grid.Column="1"/>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>

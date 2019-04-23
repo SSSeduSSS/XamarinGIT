@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PersonalizarDispositivo.PaginaCSS">
+    <ContentPage.Resources>
+        <StyleSheet Source="../Styles/Estilos.css"/>
+        <!--Enlazo mi archivo de CSS con esta ContentPage-->
+
+        <Style TargetType="Frame">
+            <Setter Property="BorderColor" Value="Red"/>
+            <Setter Property="CornerRadius" Value="25"/>
+            <!--CornerRadius = BorderRadius(está deprecated)-->
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="Text" Value="Saber más!"/>
+            <Setter Property="CornerRadius" Value="20"/>
+
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView Orientation="Both">
+            <FlexLayout>
+                <Frame>
+                    <FlexLayout Direction="Column">
+                        <Label StyleClass="header" Text="Label con estilo CSS"/>
+                        <Label Text="Label sin estilo CSS"/>
+                        <Image Source=""/>
+                        <Label Text="$#x2022; Prueba de punto"/>
+                        <Label Text="$#x2022; Prueba2 de punto"/>
+                    </FlexLayout>
+                </Frame>
+                <Frame>
+                    <FlexLayout Direction="Column">
+                        <Label Text="Gremlins" StyleClass="header" />
+                        <Label Text="Gizmo" />
+                        <Label Text="  &#x2022; Mogwai" />
+                        <Label Text="  &#x2022; No dar de comer después de las 00:00" />
+                        <Label Text="  &#x2022; No mojar" />
+                        <Label Text="  &#x2022; No exponerlo a la luz" />
+                        <Image Source="https://cloud10.todocoleccion.online/reproducciones-figuras-accion/tc/2019/02/05/10/149926614.jpg" />
+                        <Label StyleClass="empty" />
+                        <Button />
+                    </FlexLayout>
+                </Frame>
+                <Frame>
+                    <FlexLayout Direction="Column">
+                        <Label Text="Batman" StyleClass="header" />
+                        <Label Text="Batman es un superheroe sin poderes, pero con pasta..." />
+                        <Label Text="  &#x2022; Bruce Wayne" />
+                        <Label Text="  &#x2022; Bat cueva" />
+                        <Label Text="  &#x2022; Yo soy Batman" />
+                        <Image Source="https://img.brickowl.com/files/image_cache/larger/lego-batman-crooked-angry-mouth-with-yellow-utility-belt-minifigure-25.jpg" />
+                        <Label StyleClass="empty" />
+                        <Button />
+                    </FlexLayout>
+                </Frame>
+
+            </FlexLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -2,8 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PersonalizarDispositivo"
-             x:Class="PersonalizarDispositivo.MainPage">
-    <StackLayout >
+             x:Class="PersonalizarDispositivo.MainPage"
+             BackgroundColor="White">
+    <StackLayout x:Name="contenedor">
+        <StackLayout.Margin>
+            <OnPlatform x:TypeArguments="Thickness"
+                        iOS="0,40,0,0"
+                        Android="0,0,0,0"/>
+        </StackLayout.Margin>
         <Label FontSize="Large">
             <Label.Text>
                 <OnPlatform x:TypeArguments="x:String">

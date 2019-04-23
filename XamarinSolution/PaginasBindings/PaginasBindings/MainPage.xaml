@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PaginasBindings"
+             x:Class="PaginasBindings.MainPage">
+
+    <ContentPage Title="Pagina rojo">
+        <StackLayout>
+            <Label Text="Label Rojo" VerticalOptions="CenterAndExpand"/>
+            <BoxView Color="Red" WidthRequest="200"
+                     HeightRequest="200"/>
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Pagina verde">
+        <StackLayout>
+            <Label Text="Label verde" VerticalOptions="CenterAndExpand"/>
+            <BoxView Color="Green" WidthRequest="200"
+                     HeightRequest="200"/>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Pagina amarillo">
+        <StackLayout>
+            <Label Text="Label amarillo" VerticalOptions="CenterAndExpand"/>
+            <BoxView Color="Yellow" WidthRequest="200"
+                     HeightRequest="200"/>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Pagina Azul">
+        <StackLayout>
+            <Label Text="Label azul" VerticalOptions="CenterAndExpand"/>
+            <BoxView Color="Blue" WidthRequest="200"
+                     HeightRequest="200"/>
+        </StackLayout>
+    </ContentPage>
+</CarouselPage>
